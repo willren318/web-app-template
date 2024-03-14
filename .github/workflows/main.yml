@@ -10,4 +10,14 @@ jobs:
       - name: just ls command
         run: ls -la
 
+      - name: checkout code
+        uses: actions/checkout@v4.1.1
+
+      - name: download the file
+        run: curl https://www.digitocean.com/robots.txt --output robots.txt
+
+      - name: list all files
+        run: ls -l
         
+      - name: show file content
+        run: cat robots.txt  
