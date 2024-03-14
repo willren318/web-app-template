@@ -1,0 +1,10 @@
+name: My First Workflow
+on: push
+jobs:
+  myjob:
+    runs-on: ubuntu-latest
+    steps:
+      - name: just ls command
+        runs: ls -la
+
+        
